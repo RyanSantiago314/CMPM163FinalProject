@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid
-  m_Shader: {fileID: 4800000, guid: 8460397dd3029d74184c4babd7bac3d9, type: 3}
+  m_Name: Water
+  m_Shader: {fileID: 4800000, guid: 67e8039ecd91a4cfcba09962cfde6d5e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 7dca8d83860e54836a7bfe78e59ee641, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -72,38 +72,29 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FillAmount: 0.4
     - _FlowOffset: 0
-    - _FlowStrength: 1
+    - _FlowStrength: 0
     - _GlossMapScale: 1
     - _Glossiness: 1
     - _GlossyReflections: 1
-    - _HeightScale: 0.25
-    - _HeightScaleModulated: 0.75
+    - _HeightScale: 0.44
+    - _HeightScaleModulated: 92.63
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RefractionStrength: 0.617
-    - _Rim: 0.13
-    - _RimPower: 1.14
+    - _RefractionStrength: 0.05
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 0
+    - _Speed: 0.1
     - _SrcBlend: 1
-    - _Tiling: 0.5
+    - _Tiling: 0.05
     - _UJump: 0.25
     - _UVSec: 0
     - _VJump: 0.25
-    - _WaterFogDensity: 0.41
-    - _WobbleX: 0
-    - _WobbleZ: 0
+    - _WaterFogDensity: 0.39
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0, g: 0.48477888, b: 1, a: 0.34509805}
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 1, g: 0.78468525, b: 0.6273585, a: 1}
-    - _Tint: {r: 0.5471698, g: 0.3516656, b: 0, a: 1}
-    - _TopColor: {r: 1, g: 0.919442, b: 0.759434, a: 1}
-    - _WaterFogColor: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 0}
+    - _WaterFogColor: {r: 0, g: 0.051370844, b: 0.122641504, a: 0}
