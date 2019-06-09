@@ -23,6 +23,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BumpTex:
+        m_Texture: {fileID: 2800000, guid: a1a63762a08fcb44ca6b6a9e22387850, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Cube:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -52,11 +56,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 461736a91fbf76743997a506c21b98e5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 5c3ce89d6f4dc3541aa868116d614fd6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -71,8 +79,9 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
+    - _DistortStrength: 1
     - _DstBlend: 0
-    - _FillAmount: 0.4
+    - _FillAmount: 0.35
     - _FlowOffset: 0
     - _FlowStrength: 1
     - _GlossMapScale: 1
@@ -85,8 +94,8 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RefractionStrength: 0.617
-    - _Rim: 0.13
-    - _RimPower: 1.14
+    - _Rim: 0.5
+    - _RimPower: 1.38
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _Speed: 0
@@ -103,7 +112,7 @@ Material:
     - _Color: {r: 0, g: 0.48477888, b: 1, a: 0.34509805}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 1, g: 0.78468525, b: 0.6273585, a: 1}
-    - _Tint: {r: 0.5471698, g: 0.3516656, b: 0, a: 1}
-    - _TopColor: {r: 1, g: 0.919442, b: 0.759434, a: 1}
+    - _RimColor: {r: 0.8584906, g: 0.57609236, b: 0, a: 0.78431374}
+    - _Tint: {r: 0.9433962, g: 0.47857305, b: 0, a: 0.6509804}
+    - _TopColor: {r: 1, g: 1, b: 1, a: 0.6156863}
     - _WaterFogColor: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 0}
