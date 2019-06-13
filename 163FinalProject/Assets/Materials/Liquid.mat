@@ -85,7 +85,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DistortStrength: 1
     - _DstBlend: 0
-    - _FillAmount: 0.18
+    - _FillAmount: -0.35
     - _FlowOffset: 0
     - _FlowStrength: 1
     - _GlossMapScale: 1
@@ -98,7 +98,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RefractionStrength: 0.617
-    - _Rim: 0.3
+    - _Rim: 0.475
     - _RimPower: 1.38
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
