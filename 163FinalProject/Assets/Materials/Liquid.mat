@@ -31,6 +31,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _CubeMap:
+        m_Texture: {fileID: 8900000, guid: d04f9ebfd090cd64c8a81fb1ece33f54, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _DerivHeightMap:
         m_Texture: {fileID: 2800000, guid: fe77d0efb66544b17ab13a6bb883c916, type: 3}
         m_Scale: {x: 1, y: 1}

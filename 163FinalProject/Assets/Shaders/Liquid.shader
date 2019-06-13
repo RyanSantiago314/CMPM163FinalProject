@@ -13,6 +13,7 @@
         _Rim("Foam Line Width", Range(0,0.5)) = 0.0
         _RimColor("Rim Color", Color) = (1,1,1,1)
         _RimPower("Rim Power", Range(0,10)) = 0.0
+        _CubeMap("Cubemap", CUBE) = "" {}
     }
 
         SubShader
@@ -58,6 +59,7 @@
             };
 
             sampler2D _MainTex, _NoiseTex, _BackgroundTexture;
+            samplerCUBE _CubeMap;
             float4 _MainTex_ST;
             float _FillAmount, _WobbleX, _WobbleZ;
             float4 _TopColor, _RimColor, _FoamColor, _Tint;
@@ -106,7 +108,7 @@
             // apply fog
             UNITY_APPLY_FOG(i.fogCoord, col);
 
-            float refractiveIndex = 2 * (1 + (_WobbleX + _WobbleZ) / 5);
+            float refractiveIndex = 3 * (1 + (_WobbleX + _WobbleZ) / 5);
             float3 refractedDir = refract(normalize(i.viewDir), normalize(i.normal), 1.0 / refractiveIndex);
 
             // rim light
