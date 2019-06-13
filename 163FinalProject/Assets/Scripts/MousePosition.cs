@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MousePosition : MonoBehaviour
 {
-    Renderer render;
 
     [SerializeField]
     private float lastMousePosition;
@@ -26,21 +25,15 @@ public class MousePosition : MonoBehaviour
     public Material BlurMaterial;
     [Range(0, 10)]
     public int Iterations;
-    [Range(0, 4)]
-    public int DownRes;
+
+    private bool isDrunk;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //render = GetComponent<Renderer>();
 
-        //sets the renderer's shader to 
-        //our shader
-        //render.material.shader = Shader.Find("Custom/myBlur");
-
-        //lastMousePosition = Vector3.zero;
-        //changeInMousePosition = Vector3.zero;
         lastMousePosition = 0f;
         changeInMousePosition = 0f;
 
@@ -51,6 +44,16 @@ public class MousePosition : MonoBehaviour
     void Update()
     {
         MoveCam();
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            Breathalize();
+        }
+
+
+        //Don't do blur effect unless Drunk
+        if (isDrunk == false) return;
+
         changeInMousePosition = Input.mousePosition.x - lastMousePosition;
 
 
@@ -119,6 +122,10 @@ public class MousePosition : MonoBehaviour
         RenderTexture.ReleaseTemporary(rt);
     }
 
+    void Breathalize()
+    {
+        isDrunk = !isDrunk;
+    }
 
     private void MoveCam()
     {
