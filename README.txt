@@ -3,7 +3,7 @@ The Alcoholics
 Team Members:
 Norris Chan (nchan6) -
 Ryan Santiago (ryasanti) - Created shader for liquid, including liquid "wobble" functionality, foam, and refraction
-Jessie Aniguid (janiguid) -
+Jessie Aniguid (janiguid) - Created an image effect for a simple motion blur effect, implemented bubbler particle effect
 Yash Dua (ydua) - 
 
 Link to Project Slide Presentation:
