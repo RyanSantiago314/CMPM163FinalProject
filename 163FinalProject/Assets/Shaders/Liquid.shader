@@ -106,6 +106,9 @@
             // apply fog
             UNITY_APPLY_FOG(i.fogCoord, col);
 
+            float refractiveIndex = 2 * (1 + (_WobbleX + _WobbleZ) / 5);
+            float3 refractedDir = refract(normalize(i.viewDir), normalize(i.normal), 1.0 / refractiveIndex);
+
             // rim light
             float dotProduct = 1 - pow(dot(i.normal, i.viewDir), _RimPower);
             float4 RimResult = smoothstep(0.5, 1.0, dotProduct);
@@ -113,13 +116,10 @@
 
             // foam edge
             float4 foam = (step(i.fillEdge, 0.5) - step(i.fillEdge, (0.5 - _Rim)));
-            float4 foamColored = foam * (_FoamColor * 0.9) * tex2D(_MainTex, i.uv + _WobbleX * _WobbleZ);
+            float4 foamColored = foam * (_FoamColor * 0.9) * tex2D(_MainTex, i.uv - _WobbleX * _WobbleZ);
             // rest of the liquid
-            float refractiveIndex = 1.5;
-            float3 refractedDir = refract(normalize(i.viewDir),
-                normalize(i.normal), 1.0 / refractiveIndex);
             float4 result = step(i.fillEdge, 0.5) - foam;
-            float4 resultColored = result * col * tex2D(_BackgroundTexture, refractedDir);
+            float4 resultColored = result * col * tex2D(_MainTex, refractedDir) * tex2D(_BackgroundTexture, refractedDir);
             // both together, with the texture
             float4 finalResult = resultColored + foamColored;
             finalResult.rgb += RimResult;
