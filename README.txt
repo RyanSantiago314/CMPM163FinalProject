@@ -26,3 +26,5 @@ Press "a" and "d" to rotate around the glass.
 
 View Mode 2:
 Move the mouse to look around the room, and up at the skybox. 
+
+Press Alt+F4 to exit the executable.
