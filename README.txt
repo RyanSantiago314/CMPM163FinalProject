@@ -1,6 +1,6 @@
 The Alcoholics
 
-![Alt text](163FinalProject/beer.jpg?raw=true "Beer")
+[Picture](163FinalProject/beer.jpg?raw=true "Beer")
 
 Team Members:
 Norris Chan (nchan6) - Created glass mug, skybox, table setting
