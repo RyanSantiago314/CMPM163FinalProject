@@ -14,3 +14,17 @@ https://docs.google.com/document/d/1W90CYMZFZ4naSSQFSWnl4pu6wMeI6_5htRz4DZWQO54/
 
 
 Interaction Instructions:
+Enjoy a fresh pint of beer, on the house!
+
+Press "c" to toggle the consistent caustics on and off.
+Press "f" to toggle "drunk mode" on and off (may take a few presses of "f" key to turn off once turned on).
+  Move the mouse to increase the screen blur.
+Press "space" to toggle two different view modes.
+
+View Mode 1:
+Press "a" and "d" to rotate around the glass.
+
+View Mode 2:
+Move the mouse to look around the room, and up at the skybox. 
+
+Press Alt+F4 to exit the executable.
