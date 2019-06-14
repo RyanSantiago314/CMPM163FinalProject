@@ -1,7 +1,7 @@
 The Alcoholics
 
 Team Members:
-Norris Chan (nchan6) -
+Norris Chan (nchan6) - Created glass mug, skybox, table setting
 Ryan Santiago (ryasanti) - Created shader for liquid, including liquid "wobble" functionality, foam, and refraction
 Jessie Aniguid (janiguid) - Created an image effect for a simple motion blur effect, implemented bubbler particle effect
 Yash Dua (ydua) - 
