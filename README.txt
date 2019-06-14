@@ -12,6 +12,9 @@ https://docs.google.com/presentation/d/1TzT49yH6iQ0AD16LuOaxZl3Rt_WcbJSvAb8WShTx
 Link to Project Paper:
 https://docs.google.com/document/d/1W90CYMZFZ4naSSQFSWnl4pu6wMeI6_5htRz4DZWQO54/edit?usp=sharing
 
+Link to Video:
+https://youtu.be/BgIcpy8TUno
+
 *Please download the entire "executable download" folder for the executable. You may need to clone the repository for this folder*
 
 Interaction Instructions:
