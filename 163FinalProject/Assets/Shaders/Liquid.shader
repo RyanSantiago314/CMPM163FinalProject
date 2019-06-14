@@ -88,7 +88,7 @@
                // rotate around XZ
                float3 worldPosZ = float3 (worldPosX.y, worldPosX.z, worldPosX.x);
 
-               float noiseSample = tex2Dlod(_NoiseTex, float4(v.uv.xy, 0, 0));
+               float noiseSample = tex2Dlod(_NoiseTex, float4(v.uv.xy, 0, 0))/2;
                // combine rotations with worldPos, based on sine wave from script
                float3 worldPosAdjusted = worldPos - (worldPosX  * _WobbleX*noiseSample) - (worldPosZ* _WobbleZ*noiseSample);
                // how high up the liquid is
@@ -108,7 +108,7 @@
             UNITY_APPLY_FOG(i.fogCoord, col);
 
             float refractiveIndex = 3 * (1 + (_WobbleX + _WobbleZ) / 5);
-            float3 refractedDir = refract(normalize(i.viewDir), normalize(i.normal), 1.0 / refractiveIndex);
+            float3 refractedDir = refract(normalize(i.screenUV), normalize(i.normal), 1.0 / refractiveIndex);
 
             // rim light
             float dotProduct = 1 - pow(dot(i.normal, i.viewDir), _RimPower);

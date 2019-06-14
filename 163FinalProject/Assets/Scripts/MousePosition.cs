@@ -27,6 +27,7 @@ public class MousePosition : MonoBehaviour
     public int Iterations;
 
     private bool isDrunk;
+    private bool rotCamera = true;
 
 
 
@@ -45,9 +46,13 @@ public class MousePosition : MonoBehaviour
     {
         MoveCam();
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             Breathalize();
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rotCamera = !rotCamera;
         }
 
 
@@ -129,10 +134,19 @@ public class MousePosition : MonoBehaviour
 
     private void MoveCam()
     {
-        //Camera Movement
-        xRot += Input.GetAxis("Mouse X");
-        yRot -= Input.GetAxis("Mouse Y");
+        if (rotCamera)
+        {
+            //Camera Movement
+            transform.RotateAround(GameObject.Find("Beer").transform.position, Vector3.up, Input.GetAxisRaw("Horizontal"));
 
-        transform.eulerAngles = new Vector3(yRot * ySpeed, xRot * xSpeed);
+            transform.LookAt(GameObject.Find("Beer").transform);
+        }
+        else
+        {
+            xRot += Input.GetAxis("Mouse X");
+            yRot -= Input.GetAxis("Mouse Y");
+
+            transform.eulerAngles = new Vector3(yRot * ySpeed, xRot * xSpeed);
+        }
     }
 }
