@@ -1,7 +1,5 @@
 The Alcoholics
 
-[Picture](163FinalProject/beer.jpg?raw=true)
-
 Team Members:
 Norris Chan (nchan6) - Created glass mug, skybox, table setting
 Ryan Santiago (ryasanti) - Created shader for liquid, including liquid "wobble" functionality, foam, and refraction
@@ -16,6 +14,9 @@ https://docs.google.com/document/d/1W90CYMZFZ4naSSQFSWnl4pu6wMeI6_5htRz4DZWQO54/
 
 Link to Video:
 https://youtu.be/BgIcpy8TUno
+
+Pictures:
+Look in 163FinalProject for a photo.
 
 *Please download the entire "executable download" folder for the executable. You may need to clone the repository for this folder*
 
