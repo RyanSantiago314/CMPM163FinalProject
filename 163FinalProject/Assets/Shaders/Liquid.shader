@@ -13,7 +13,6 @@
         _Rim("Foam Line Width", Range(0,0.5)) = 0.0
         _RimColor("Rim Color", Color) = (1,1,1,1)
         _RimPower("Rim Power", Range(0,10)) = 0.0
-        _CubeMap("Cubemap", CUBE) = "" {}
     }
 
         SubShader
