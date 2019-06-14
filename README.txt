@@ -13,6 +13,7 @@ Link to Project Paper:
 https://docs.google.com/document/d/1W90CYMZFZ4naSSQFSWnl4pu6wMeI6_5htRz4DZWQO54/edit?usp=sharing
 
 *If you don't already have it, please download UnityPlayer.dll as well. This is required to run the executable.*
+*If you still get an error trying to run the executable, you may need to download the entire project.*
 
 Interaction Instructions:
 Enjoy a fresh pint of beer, on the house!
